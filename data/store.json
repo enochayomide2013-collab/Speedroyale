@@ -1211,6 +1211,315 @@
         "daily-1-win"
       ],
       "dailyMissionDate": "2026-11-21"
+    },
+    "plr_aa8451f2-743f-4285-b149-2392236e1e54": {
+      "id": "plr_aa8451f2-743f-4285-b149-2392236e1e54",
+      "username": "Speedstar_9375",
+      "speedCredits": 25000,
+      "xp": 0,
+      "mmr": 1000,
+      "racesCompleted": 0,
+      "wins": 0,
+      "starsCollected": 0,
+      "turboActivations": 0,
+      "rankedRaces": 0,
+      "vaultUnlocked": false,
+      "unlockedIds": [
+        "vortex",
+        "nova",
+        "drift",
+        "blazeon",
+        "volt",
+        "aero",
+        "frost",
+        "rush",
+        "quillbolt",
+        "crimson-blur",
+        "galewing",
+        "dasher-kid",
+        "double-jump",
+        "air-dash",
+        "turbo"
+      ],
+      "claimedAchievements": [],
+      "missions": {
+        "daily-100-stars": {
+          "progress": 0,
+          "claimed": false
+        },
+        "daily-2-time-attack": {
+          "progress": 0,
+          "claimed": false
+        },
+        "daily-20-turbo": {
+          "progress": 0,
+          "claimed": false
+        }
+      },
+      "loadout": {
+        "speedstarId": "vortex",
+        "abilityIds": [
+          "double-jump",
+          "air-dash",
+          "turbo"
+        ],
+        "vehicleId": null,
+        "gadgetId": null,
+        "skinId": null,
+        "trailId": null,
+        "emoteId": null,
+        "victoryAnimId": null
+      },
+      "settings": {
+        "quality": "high",
+        "masterVolume": 0.7,
+        "sfxVolume": 0.85,
+        "musicVolume": 0.45,
+        "autoSprint": true,
+        "touchControls": false,
+        "cameraFovBoost": true,
+        "controls": {
+          "forward": "KeyW",
+          "backward": "KeyS",
+          "steerLeft": "KeyA",
+          "steerRight": "KeyD",
+          "sprint": "ShiftLeft",
+          "jump": "Space",
+          "slide": "KeyC",
+          "turbo": "KeyF",
+          "ability": "KeyQ",
+          "airDash": "KeyE",
+          "gadget": "KeyX",
+          "vehicle": "KeyV",
+          "respawn": "KeyR",
+          "emote": "KeyG"
+        },
+        "gamepad": {
+          "jump": 0,
+          "slide": 1,
+          "turbo": 2,
+          "ability": 3,
+          "airDash": 5,
+          "gadget": 4,
+          "vehicle": 8,
+          "respawn": 9
+        },
+        "savedSchemes": []
+      },
+      "personalBests": {},
+      "speedstarMastery": {},
+      "dailyMissionIds": [
+        "daily-100-stars",
+        "daily-2-time-attack",
+        "daily-20-turbo"
+      ],
+      "dailyMissionDate": "2026-11-21"
+    },
+    "plr_8a47c102-0993-406e-999d-d569bf2b954c": {
+      "id": "plr_8a47c102-0993-406e-999d-d569bf2b954c",
+      "username": "Speedstar_4193",
+      "speedCredits": 25000,
+      "xp": 0,
+      "mmr": 1000,
+      "racesCompleted": 0,
+      "wins": 0,
+      "starsCollected": 0,
+      "turboActivations": 0,
+      "rankedRaces": 0,
+      "vaultUnlocked": false,
+      "unlockedIds": [
+        "vortex",
+        "nova",
+        "drift",
+        "blazeon",
+        "volt",
+        "aero",
+        "frost",
+        "rush",
+        "quillbolt",
+        "crimson-blur",
+        "galewing",
+        "dasher-kid",
+        "double-jump",
+        "air-dash",
+        "turbo"
+      ],
+      "claimedAchievements": [],
+      "missions": {
+        "daily-1-ranked": {
+          "progress": 0,
+          "claimed": false
+        },
+        "daily-20-turbo": {
+          "progress": 0,
+          "claimed": false
+        },
+        "daily-40-stars": {
+          "progress": 0,
+          "claimed": false
+        }
+      },
+      "loadout": {
+        "speedstarId": "vortex",
+        "abilityIds": [
+          "double-jump",
+          "air-dash",
+          "turbo"
+        ],
+        "vehicleId": null,
+        "gadgetId": null,
+        "skinId": null,
+        "trailId": null,
+        "emoteId": null,
+        "victoryAnimId": null
+      },
+      "settings": {
+        "quality": "high",
+        "masterVolume": 0.7,
+        "sfxVolume": 0.85,
+        "musicVolume": 0.45,
+        "autoSprint": true,
+        "touchControls": false,
+        "cameraFovBoost": true,
+        "controls": {
+          "forward": "KeyW",
+          "backward": "KeyS",
+          "steerLeft": "KeyA",
+          "steerRight": "KeyD",
+          "sprint": "ShiftLeft",
+          "jump": "Space",
+          "slide": "KeyC",
+          "turbo": "KeyF",
+          "ability": "KeyQ",
+          "airDash": "KeyE",
+          "gadget": "KeyX",
+          "vehicle": "KeyV",
+          "respawn": "KeyR",
+          "emote": "KeyG"
+        },
+        "gamepad": {
+          "jump": 0,
+          "slide": 1,
+          "turbo": 2,
+          "ability": 3,
+          "airDash": 5,
+          "gadget": 4,
+          "vehicle": 8,
+          "respawn": 9
+        },
+        "savedSchemes": []
+      },
+      "personalBests": {},
+      "speedstarMastery": {},
+      "dailyMissionIds": [
+        "daily-1-ranked",
+        "daily-20-turbo",
+        "daily-40-stars"
+      ],
+      "dailyMissionDate": "2026-11-21"
+    },
+    "plr_79c0d697-62d5-4f0c-aa95-86951d430079": {
+      "id": "plr_79c0d697-62d5-4f0c-aa95-86951d430079",
+      "username": "Speedstar_4484",
+      "speedCredits": 25000,
+      "xp": 0,
+      "mmr": 1000,
+      "racesCompleted": 0,
+      "wins": 0,
+      "starsCollected": 0,
+      "turboActivations": 0,
+      "rankedRaces": 0,
+      "vaultUnlocked": false,
+      "unlockedIds": [
+        "vortex",
+        "nova",
+        "drift",
+        "blazeon",
+        "volt",
+        "aero",
+        "frost",
+        "rush",
+        "quillbolt",
+        "crimson-blur",
+        "galewing",
+        "dasher-kid",
+        "double-jump",
+        "air-dash",
+        "turbo"
+      ],
+      "claimedAchievements": [],
+      "missions": {
+        "daily-2-time-attack": {
+          "progress": 0,
+          "claimed": false
+        },
+        "daily-3-races": {
+          "progress": 0,
+          "claimed": false
+        },
+        "daily-1-win": {
+          "progress": 0,
+          "claimed": false
+        }
+      },
+      "loadout": {
+        "speedstarId": "vortex",
+        "abilityIds": [
+          "double-jump",
+          "air-dash",
+          "turbo"
+        ],
+        "vehicleId": null,
+        "gadgetId": null,
+        "skinId": null,
+        "trailId": null,
+        "emoteId": null,
+        "victoryAnimId": null
+      },
+      "settings": {
+        "quality": "high",
+        "masterVolume": 0.7,
+        "sfxVolume": 0.85,
+        "musicVolume": 0.45,
+        "autoSprint": true,
+        "touchControls": false,
+        "cameraFovBoost": true,
+        "controls": {
+          "forward": "KeyW",
+          "backward": "KeyS",
+          "steerLeft": "KeyA",
+          "steerRight": "KeyD",
+          "sprint": "ShiftLeft",
+          "jump": "Space",
+          "slide": "KeyC",
+          "turbo": "KeyF",
+          "ability": "KeyQ",
+          "airDash": "KeyE",
+          "gadget": "KeyX",
+          "vehicle": "KeyV",
+          "respawn": "KeyR",
+          "emote": "KeyG"
+        },
+        "gamepad": {
+          "jump": 0,
+          "slide": 1,
+          "turbo": 2,
+          "ability": 3,
+          "airDash": 5,
+          "gadget": 4,
+          "vehicle": 8,
+          "respawn": 9
+        },
+        "savedSchemes": []
+      },
+      "personalBests": {},
+      "speedstarMastery": {},
+      "dailyMissionIds": [
+        "daily-2-time-attack",
+        "daily-3-races",
+        "daily-1-win"
+      ],
+      "dailyMissionDate": "2026-11-21"
     }
   },
   "tokens": {
@@ -1219,7 +1528,10 @@
     "272ca3eb8aa84b91feacbfac219a1109a08a6f405e0f12a4": "plr_6e26e7d1-de97-4582-b572-b76a9aa42ee4",
     "05fb894424f46dcf4d207a3e173032edad9cbc8855d2144a": "plr_c9e861f2-f903-4924-8907-3bcc5463bf4f",
     "0ba156b626050b54571ac82f3fe2f9474282650b042085f4": "plr_cf9858f5-e9cb-4f71-9e93-b81bffd545ac",
-    "37ade4c131c4e8284c15293f05f5bf487d2f6f0e54b3692f": "plr_6c13c366-1185-4049-899b-5a94f6539028"
+    "37ade4c131c4e8284c15293f05f5bf487d2f6f0e54b3692f": "plr_6c13c366-1185-4049-899b-5a94f6539028",
+    "9a13317384ed2f17cd9f134a6063f9d0e0eb5a4d66be5be7": "plr_aa8451f2-743f-4285-b149-2392236e1e54",
+    "24ce640368d04af9a9da492dabd8e2c97b997f056e2ac761": "plr_8a47c102-0993-406e-999d-d569bf2b954c",
+    "fc4a68c5bcdcf2403be0a695a6c12e90c6b9047d274a098c": "plr_79c0d697-62d5-4f0c-aa95-86951d430079"
   },
   "mapRecords": {
     "neon-rush-city": [

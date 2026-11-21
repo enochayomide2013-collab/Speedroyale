@@ -28,22 +28,50 @@ async function requestJson<T>(url: string, options: RequestInit = {}): Promise<T
     headers.Authorization = `Bearer ${sessionToken}`;
   }
   const res = await fetch(url, { ...options, headers });
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data?.error || `Request failed (${res.status})`);
+  const rawText = await res.text();
+  let data: Record<string, unknown> | null = null;
+  if (rawText) {
+    try {
+      data = JSON.parse(rawText) as Record<string, unknown>;
+    } catch {
+      const preview = rawText.replace(/\s+/g, ' ').trim().slice(0, 80);
+      throw new Error(
+        res.ok
+          ? `Unexpected non-JSON response from server: ${preview}`
+          : `Server unavailable (${res.status}): ${preview}`
+      );
+    }
   }
-  return data as T;
+  if (!res.ok) {
+    const errMsg = typeof data?.error === 'string' ? data.error : `Request failed (${res.status})`;
+    throw new Error(errMsg);
+  }
+  if (data === null) {
+    throw new Error(`Empty response from server (${res.status})`);
+  }
+  return data as unknown as T;
 }
 
 export async function initSession(username?: string): Promise<PlayerProfile> {
-  const data = await requestJson<{ token?: string; profile: PlayerProfile }>('/api/auth/session', {
-    method: 'POST',
-    body: JSON.stringify({ username }),
-  });
-  if (data.token) {
-    sessionToken = data.token;
+  let lastErr: unknown;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const data = await requestJson<{ token?: string; profile: PlayerProfile }>('/api/auth/session', {
+        method: 'POST',
+        body: JSON.stringify({ username }),
+      });
+      if (data.token) {
+        sessionToken = data.token;
+      }
+      return data.profile;
+    } catch (err) {
+      lastErr = err;
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 600 * (attempt + 1)));
+      }
+    }
   }
-  return data.profile;
+  throw lastErr instanceof Error ? lastErr : new Error('Unable to connect to game server.');
 }
 
 export async function renamePlayer(username: string): Promise<PlayerProfile> {

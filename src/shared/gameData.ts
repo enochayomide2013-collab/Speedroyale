@@ -11,7 +11,7 @@ import {
   type SpeedstarRarity,
   type SpeedstarStats,
   type TurboVisualStyle,
-} from './rosterData';
+} from './rosterData.ts';
 
 export {
   MASTERY_TIERS,

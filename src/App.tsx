@@ -433,11 +433,31 @@ export default function App() {
       {/* Loading / Error State */}
       {!profile && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#080B12]">
-          <div className="text-center space-y-2 px-6">
+          <div className="text-center space-y-3 px-6 max-w-md">
             <h1 className="font-display text-3xl font-bold text-white tracking-wide">SPEEDSTARS ROYALE</h1>
             <p className="text-sm text-slate-400">
               {bootError ? bootError : 'Connecting to Speedstars Arena...'}
             </p>
+            {bootError && (
+              <button
+                onClick={() => {
+                  setBootError(null);
+                  initSession()
+                    .then((prof) => {
+                      setProfile(prof);
+                      engineRef.current?.applySettings(prof.settings);
+                      engineRef.current?.enterLobby(prof.loadout);
+                      mpRef.current?.connect();
+                    })
+                    .catch((err) => {
+                      setBootError(err instanceof Error ? err.message : 'Unable to connect to game server.');
+                    });
+                }}
+                className="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-bold transition-colors"
+              >
+                Retry Connection
+              </button>
+            )}
           </div>
         </div>
       )}

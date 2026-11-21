@@ -1292,6 +1292,23 @@ async function startServer(): Promise<void> {
     });
   });
 
+  app.use('/api', (_req, res) => {
+    res.status(404).json({ error: 'API endpoint not found.' });
+  });
+
+  app.use((err: unknown, req: express.Request, res: express.Response, next: express.NextFunction) => {
+    if (res.headersSent) {
+      next(err);
+      return;
+    }
+    if (req.path.startsWith('/api')) {
+      const msg = err instanceof Error ? err.message : 'Internal server error.';
+      res.status(500).json({ error: msg });
+      return;
+    }
+    next(err);
+  });
+
   // Vite middleware in development, static dist in production
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
